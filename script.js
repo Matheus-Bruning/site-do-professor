@@ -3,14 +3,14 @@ const img = document.querySelectorAll("#img img");
 
 let idx = 0;
 
-function carrosel(){
+function carrosssel(){
     idx++;
 
     if(idx > img.length - 1){
         idx = 0;
     }
 
-    imgs.style.transform = 'translateX(${-idx * 500}px)';
+    imgs.style.transform = `translateX(${-idx * 700}px)`
 }
 
-setInterval(carrosel, 1800);
+setInterval(carrosssel, 1500);
